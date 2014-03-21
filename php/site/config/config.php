@@ -44,7 +44,7 @@ c::set('url', '/');
  
 */
 
-c::set('url', 'https://kirby-snor.rhcloud.com');
+c::set('url', 'http://kirby-snor.rhcloud.com');
 
 
 /* 
@@ -121,7 +121,7 @@ c::set('url', 'https://yourdomain.com');
 
 */
 
-c::set('ssl', 'https://kirby-snor.rhcloud.com');
+c::set('ssl', false);
 
 
 /*
