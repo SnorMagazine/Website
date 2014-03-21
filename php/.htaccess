@@ -8,10 +8,12 @@
 Options +FollowSymlinks
 RewriteEngine on
 
-RewriteCond %{HTTP_HOST} !=localhost
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]{3}$
-RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+#https
+
+# RewriteCond %{HTTP_HOST} !=localhost
+# RewriteCond %{HTTP:X-Forwarded-Proto} !https
+# RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]{3}$
+# RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 # make sure to set the RewriteBase correctly
 # if you are running the site in a subfolder.
