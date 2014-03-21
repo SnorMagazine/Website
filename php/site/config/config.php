@@ -44,7 +44,7 @@ c::set('url', '/');
  
 */
 
-c::set('url', 'http://kirby-snor.rhcloud.com');
+c::set('url', 'https://kirby-snor.rhcloud.com');
 
 
 /* 
