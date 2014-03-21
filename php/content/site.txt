@@ -1,9 +1,17 @@
-Title: Kirby
+﻿Title: The Lobby
+
 ----
-Author: Bastian Allgeier
+
+Author: Nick Meehan
+
 ----
-Description: Kirby is awesome
+
+Description: The Lobby's goal is to democratize one of the darkest parts of the American political system, the political lobby. It is being developed as an online platform that gives users the opportunity to create and crowdfund a political lobby.
+
 ----
-Keywords: kirby, cms, kirbycms, php, filesystem
+
+Keywords: crowdfunding, political lobbying, government, money
+
 ----
-Copyright: © 2009-(date: Year) (link: http://bastianallgeier.com text: Bastian Allgeier)
+
+Copyright: © 2013-(date: Year) (link: http://unsalted.nu text: Nick Meehan)

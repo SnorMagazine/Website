@@ -5,9 +5,12 @@
 
 # enable awesome urls. i.e.: 
 # http://yourdomain.com/about-us/team
+Options +FollowSymlinks
 RewriteEngine on
 
-RewriteCond %{HTTP:X-Forwarded-Proto} !https  
+RewriteCond %{HTTP_HOST} !=localhost
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]{3}$
 RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 # make sure to set the RewriteBase correctly
@@ -18,8 +21,14 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 # Set the RewriteBase to:
 # 
 # RewriteBase /mysite
-# 
-RewriteBase /
+
+# RewriteBase equivalent - Production
+RewriteCond %{HTTP_HOST} !^localhost$
+RewriteRule . - [E=REWRITEBASE:/]
+
+# RewriteBase equivalent - Development
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteRule . - [E=REWRITEBASE:/Snor/php/]
 
 # block text files in the content folder from being accessed directly
 RewriteRule ^content/(.*)\.(txt|md|mdown)$ error [R=301,L]

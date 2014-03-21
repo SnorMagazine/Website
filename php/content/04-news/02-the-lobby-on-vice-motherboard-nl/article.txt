@@ -1,0 +1,11 @@
+﻿Title: The Lobby on Vice Motherboard NL
+
+----
+
+Text: Check out our interview with the Dutch version of Vice Motherboard.
+
+link: (link: http://motherboard.vice.com/nl/read/the-lobby text: The article on Vice NL popup: yes)
+
+----
+
+Date: 04.02.2014
